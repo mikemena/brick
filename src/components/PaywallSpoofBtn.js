@@ -1,5 +1,7 @@
 /* PaywallSpoofBtn.js renders the button to add/remove sites from the paywall cookie list */
 
+/*global chrome*/
+
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 

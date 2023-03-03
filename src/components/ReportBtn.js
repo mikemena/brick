@@ -1,5 +1,5 @@
 /* ReportBtn.js renders the button to report bugs */
-
+/*global chrome*/
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 

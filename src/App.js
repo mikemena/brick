@@ -1,5 +1,5 @@
 /* App.js is implements main frontend for the extension popup */
-
+/*global chrome*/
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
