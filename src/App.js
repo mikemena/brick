@@ -7,11 +7,11 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 
-import EnableAdblockBtn from './adblock_buttons/EnableAdblockBtn.js';
-import EnablePaywallBtn from './paywall_buttons/EnablePaywallBtn.js';
-import PaywallSpoofBtn from './paywall_buttons/PaywallSpoofBtn.js';
-import PaywallCookieBtn from './paywall_buttons/PaywallCookieBtn.js';
-import PaywallSMBtn from './paywall_buttons/PaywallSMBtn.js';
+import EnableAdblockBtn from './components/EnableAdblockBtn.js';
+import EnablePaywallBtn from './components/EnablePaywallBtn';
+import PaywallSpoofBtn from './components/PaywallSpoofBtn.js';
+import PaywallCookieBtn from './components/PaywallCookieBtn.js';
+import PaywallSMBtn from './components/PaywallSMBtn.js';
 
 import ReportBtn from './components/ReportBtn';
 
