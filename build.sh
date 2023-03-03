@@ -14,7 +14,7 @@ build() {
     cp -r build/* dist
     mkdir dist/bg_scripts
     cp -r src/bg_scripts/* dist/bg_scripts
-    cp src/hover_logo.jpg dist/
+    cp src/brick_logo.png dist/
 
     mv dist/index.html dist/popup.html
     

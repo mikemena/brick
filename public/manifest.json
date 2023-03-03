@@ -1,0 +1,35 @@
+{
+  "name": "Brick",
+  "description": "An extension that allows you to access important information with ease and without distractions.",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "background": {
+    "scripts": [
+      "bg_scripts/tab_data.js",
+      "bg_scripts/auto_update.js",
+      "bg_scripts/adblock_scripts/ad_domains.js",
+      "bg_scripts/adblock_scripts/adblock_storage.js",
+      "bg_scripts/adblock_scripts/adblock.js",
+      "bg_scripts/paywall_scripts/paywall_sites.js",
+      "bg_scripts/paywall_scripts/paywall_bypass.js",
+      "bg_scripts/paywall_scripts/paywall_storage.js",
+      "bg_scripts/paywall_scripts/paywall_cookies.js",
+      "bg_scripts/paywall_scripts/paywall_spoof.js",
+      "bg_scripts/paywall_scripts/paywall_SM.js",
+      "bg_scripts/paywall_scripts/paywall_lists.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/",
+    "https://*/",
+    "storage",
+    "background",
+    "contentSettings"
+  ],
+  "icons": { "16": "logo16.png", "48": "logo48.png", "128": "logo128.png" }
+}
