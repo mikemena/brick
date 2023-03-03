@@ -15,7 +15,7 @@ import PaywallSMBtn from './components/PaywallSMBtn.js';
 
 import ReportBtn from './components/ReportBtn';
 
-import logo from './style/brick_logo.png';
+import logo from './images/logo128.png';
 import './style/app.css';
 
 class App extends React.Component {
