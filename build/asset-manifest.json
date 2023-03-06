@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcd7d259.chunk.css",
+    "main.css": "/static/css/main.8ba926d4.chunk.css",
     "main.js": "/static/js/main.57a533c7.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.73a9df20.js",
     "static/js/2.251bac63.chunk.js": "/static/js/2.251bac63.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.f7ba8441e75386eb0cf2bdfeebf5ffce.js": "/precache-manifest.f7ba8441e75386eb0cf2bdfeebf5ffce.js",
+    "precache-manifest.5f408805ec8f95543aef1cda2e1cf28d.js": "/precache-manifest.5f408805ec8f95543aef1cda2e1cf28d.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.251bac63.chunk.js.LICENSE.txt": "/static/js/2.251bac63.chunk.js.LICENSE.txt",
     "static/media/brick_logo.png": "/static/media/brick_logo.1419d01c.png"
@@ -13,7 +13,7 @@
   "entrypoints": [
     "static/js/runtime-main.73a9df20.js",
     "static/js/2.251bac63.chunk.js",
-    "static/css/main.dcd7d259.chunk.css",
+    "static/css/main.8ba926d4.chunk.css",
     "static/js/main.57a533c7.chunk.js"
   ]
 }
