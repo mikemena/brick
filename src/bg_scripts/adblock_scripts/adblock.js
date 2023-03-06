@@ -6,7 +6,8 @@
 */
 
 /*global chrome*/
-
+var { adblockInWhitelist } = require('./adblock_storage');
+var { adDomains } = require('./ad_domains');
 var adblockEnabled = true;
 var blockedCount = 0;
 
@@ -18,7 +19,6 @@ function blockAds(details) {
       adblockInWhitelist
   );
   if (!adblockEnabled || adblockInWhitelist) return;
-  //console.log("I am going to block:", details.url)
   blockedCount += 1;
   return { cancel: true };
 }

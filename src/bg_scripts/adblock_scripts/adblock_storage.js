@@ -4,6 +4,7 @@
 /*global chrome*/
 
 var adblockInWhitelist = false;
+var { adblockWhitelistDict } = require('./ad_domains');
 
 function checkAdblockWhiteList(root) {
   console.log('Checking if ' + root + ' is in adblockWhitelist...');
