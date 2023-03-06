@@ -6,12 +6,11 @@
 */
 
 /*global chrome*/
-import addomains from './ad_domains';
+
 var adblockEnabled = true;
 var blockedCount = 0;
 
 function blockAds(details) {
-  console.log(addomains.adDomains);
   console.log(
     'adblockEnabled: ' +
       adblockEnabled +
