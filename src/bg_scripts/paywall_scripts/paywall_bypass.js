@@ -1,5 +1,5 @@
 /* paywall_bypass.js contains all the functionality to bypass paywalls
- 
+
  1. Reroute Referer to Twitter (mimics that we came from Twitter)
  2. Spoofing our machine as a Google Crawler by manipulating the HTTP requestHeaders if on blacklist
  3. Block cookies if on blacklist
@@ -89,14 +89,13 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   ['requestHeaders', 'blocking', 'extraHeaders']
 );
 
-/*
 function deleteCookies(root) {
-  root = "." + root
-  chrome.cookies.getAll({domain: root}, function(cookies) {
+  root = '.' + root;
+  chrome.cookies.getAll({ domain: root }, function (cookies) {
     //Help from iamadamdev's bypass-paywalls-chrome
-    for(var i=0; i<cookies.length; i++) {
+    for (var i = 0; i < cookies.length; i++) {
       let ck = cookies[i];
-      console.log(ck.name)
+      console.log(ck.name);
       const cookie = {
         url: (ck.secure ? 'https://' : 'http://') + ck.domain + ck.path,
         name: ck.name,
@@ -109,19 +108,16 @@ function deleteCookies(root) {
 
 //blockCookies() blocks Cookies from the website
 function blockCookies(details) {
-  if(!paywallEnabled || !paywallInBlacklist)
-    return
-  root = extractRootWebsite(details.url)
+  if (!paywallEnabled || !paywallInBlacklist) return;
+  root = extractRootWebsite(details.url);
 
   //Root is in the form: example.com
-  rootSearch = "*://*." + root + "/*";
+  rootSearch = '*://*.' + root + '/*';
   //RootSearch is in the form:  *://*.example.com/*
-  if(rootSearch in paywallBlacklistDict)
-    deleteCookies(root)
+  if (rootSearch in paywallBlacklistDict) deleteCookies(root);
 }
 
 //Add listener to blockCookies if on blacklist
 chrome.webRequest.onBeforeSendHeaders.addListener(blockCookies, {
-  urls: ["<all_urls>"] 
+  urls: ['<all_urls>']
 });
-*/
